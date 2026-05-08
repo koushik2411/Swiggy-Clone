@@ -4,7 +4,9 @@ import { FaLocationDot, FaMagnifyingGlass } from "react-icons/fa6";
 import { FaChevronDown } from "react-icons/fa";
 import HeroCard from "./HeroCard";
 
-function Hero() {
+function Hero({ foodOpts }) {
+
+  // CARDS ARRAY
   const cardData = [
     {
       title: "FOOD DELIVERY",
@@ -65,7 +67,7 @@ function Hero() {
               <input
                 type="text"
                 placeholder="Enter your delivery location"
-                className=" border w-58 p-2 outline-none placeholder:text-gray-400 placeholder:font-semibold"
+                className=" w-58 p-2 outline-none text-gray-900 placeholder:text-gray-400 placeholder:font-semibold"
               />
 
               {/* Dropdown button */}
@@ -79,7 +81,7 @@ function Hero() {
               <input
                 type="text"
                 placeholder="Search for restaurants, item or more"
-                className=" border w-[80vw] md:w-80 lg:w-110 p-2 outline-none placeholder:text-gray-400 placeholder:font-semibold"
+                className=" w-[80vw] md:w-80 lg:w-110 p-2 outline-none text-gray-900 placeholder:text-gray-400 placeholder:font-semibold"
               />
 
               <FaMagnifyingGlass className=" text-gray-400 text-xl" />
