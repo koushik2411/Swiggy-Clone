@@ -102,22 +102,22 @@ function Footer() {
         <div className=" flex gap-3 items-center">
             
             <Link>
-                <button className=" p-1 flex items-center gap-1 bg-linear-to-b from-gray-900 to-black text-gray-50 rounded-lg cursor-pointer">
+                <button className=" p-1 pr-2 flex items-center gap-1 bg-linear-to-b from-gray-900 to-black text-gray-50 rounded-lg cursor-pointer">
                     <IoLogoApple className=" text-3xl"/>
-                    <p>
+                    <div>
                         <p className=" text-[8px] text-left">Download on the</p>
                         <p className=" text-sm font-semibold">App Store</p>
-                    </p>
+                    </div>
                 </button>
             </Link>
 
             <Link>
-                <button className=" p-1 flex items-center gap-1 bg-linear-to-b from-gray-900 to-black text-gray-50 rounded-lg cursor-pointer">
+                <button className=" p-1 pr-2 flex items-center gap-1 bg-linear-to-b from-gray-900 to-black text-gray-50 rounded-lg cursor-pointer">
                     <IoLogoGooglePlaystore className=" text-2xl"/>
-                    <p>
+                    <div>
                         <p className=" text-[8px] text-left">GET IT ON</p>
                         <p className=" text-sm font-semibold">Google Play</p>
-                    </p>
+                    </div>
                 </button>
             </Link>
         </div>
