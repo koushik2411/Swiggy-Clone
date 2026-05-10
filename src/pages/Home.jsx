@@ -1,7 +1,6 @@
 import React from "react";
 import Hero from "../components/Hero";
 import FoodOptCard from "../components/FoodOptCard";
-import Footer from "../components/Footer";
 
 function Home() {
   const foodOpts = [
@@ -128,7 +127,7 @@ function Home() {
           </div>
         </div>
 
-        <div className=" w-full p-2 grid grid-rows-2 grid-flow-col gap-1 overflow-x-auto scrollbar-hide">
+        <div className=" w-full p-2 grid grid-rows-2 grid-flow-col gap-3 justify-items-center overflow-x-auto scrollbar-hide">
           {foodOpts.map((item, id) => (
             <FoodOptCard key={id} item={item} />
           ))}
@@ -157,14 +156,14 @@ function Home() {
       </div>
 
       {/* Cities with food delivery */}
-      <div className=" p-3 lg:p-10">
+      <div className=" p-3 lg:p-15">
         <h1 className=" font-bold text-xl">Cities with food delivery</h1>
 
         <div className=" p-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {cities.map((city, index) => (
             <div
               key={index}
-              className=" border p-3 flex items-center justify-center text-xs text-center rounded-xl"
+              className=" border p-3 flex items-center justify-center text-sm text-center rounded-xl"
             >
               Order food online in {city}
             </div>
@@ -173,14 +172,14 @@ function Home() {
       </div>
 
       {/* Cities with grocery delivery */}
-      <div className=" p-3 lg:p-10">
+      <div className=" p-3 lg:p-15">
         <h1 className=" font-bold text-xl">Cities with grocery delivery</h1>
 
         <div className=" p-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {cities.map((city, index) => (
             <div
               key={index}
-              className=" border p-3 flex items-center justify-center text-xs text-center rounded-xl"
+              className=" border p-3 flex items-center justify-center text-sm text-center rounded-xl"
             >
               Order grocery online in {city}
             </div>
@@ -188,7 +187,6 @@ function Home() {
         </div>
       </div>
 
-      <Footer />
     </div>
   );
 }

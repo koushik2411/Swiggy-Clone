@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 import { MdArrowOutward } from "react-icons/md";
 import { FaChevronDown, FaHome, FaUser } from "react-icons/fa";
 
@@ -27,7 +27,10 @@ function Header() {
 
         <div className=" flex items-center gap-8">
           {/* Navbar */}
-          <Navbar />
+          <nav className=' lg:flex gap-8 font-bold text-md hidden'>
+            <Link>Swiggy Corporate</Link>
+            <Link>Partner with us</Link>
+          </nav>
 
           {/* Buttons */}
           <div className=" flex gap-8">

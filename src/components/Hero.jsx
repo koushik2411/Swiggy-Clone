@@ -13,21 +13,21 @@ function Hero({ foodOpts }) {
       category: "FROM RESTAURANTS",
       offer: "UPTO 60% OFF",
       // image: "",
-      // link: "",
+      link: "/restaurants",
     },
     {
       title: "INSTAMART",
       category: "INSTANT GROCERY",
       offer: "UPTO 60% OFF",
       // image: "",
-      // link: "",
+      link: "/grocery",
     },
     {
       title: "DINEOUT",
       category: "EAT OUT & SAVE MORE",
       offer: "UPTO 50% OFF",
       // image: "",
-      // link: "",
+      link: "/restaurants",
     },
   ];
 
