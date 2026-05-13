@@ -5,84 +5,68 @@ import FoodOptCard from "../components/FoodOptCard";
 function Home() {
   const foodOpts = [
     {
-      image: "",
+      image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778683679/north_indian_dkf5lf.png",
       name: "North Indian",
-      link: "",
     },
     {
-      image: "",
+      image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778683676/south_indian_fbhxwj.png",
       name: "South Indian",
-      link: "",
     },
     {
-      image: "",
+      image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778683677/biryani_heafbj.png",
       name: "Biryani",
-      link: "",
     },
     {
-      image: "",
+      image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778683674/cake_gz60aw.png",
       name: "Cake",
-      link: "",
     },
     {
-      image: "",
+      image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778683678/rolls_jfxvvv.png",
       name: "Rolls",
-      link: "",
     },
     {
-      image: "",
+      image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778683674/noodles_brpw4h.png",
       name: "Noodles",
-      link: "",
     },
     {
-      image: "",
+      image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778683678/paratha_nmguwf.png",
       name: "Paratha",
-      link: "",
     },
     {
-      image: "",
+      image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778683676/ice_creams_lm4eko.png",
       name: "Ice Cream",
-      link: "",
     },
     {
-      image: "",
+      image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778683677/deserts_phcu24.png",
       name: "Deserts",
-      link: "",
     },
     {
-      image: "",
+      image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778683674/momo_a8kwqr.png",
       name: "Momo",
-      link: "",
     },
     {
-      image: "",
+      image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778683676/chinese_k4nvbz.png",
       name: "Chinese",
-      link: "",
     },
     {
-      image: "",
+      image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778683673/pizza_o6dqy2.png",
       name: "Pizza",
-      link: "",
     },
     {
-      image: "",
+      image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778683675/burger_hgxaum.png",
       name: "Burger",
-      link: "",
     },
     {
-      image: "",
+      image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778683673/salad_ezi54k.png",
       name: "Salad",
-      link: "",
     },
     {
-      image: "",
+      image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778683676/dosa_vf5fru.png",
       name: "Dosa",
-      link: "",
     },
     {
-      image: "",
+      image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778683673/chhole_bhature_p9b4ka.png",
       name: "Chhole Bhature",
-      link: "",
     },
   ];
 
@@ -91,12 +75,48 @@ function Home() {
     {
       image: "",
       name: "",
-      link: "",
     },
   */
   }
   //--------------------------------------------------------------------------
 
+  const groceries =[
+    {
+      image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778683767/vegetables_vbofgy.png",
+      name: "Vegetables",
+    },
+    {
+      image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778683766/fruits_jboyuu.png",
+      name: "Fruits",
+    },
+    {
+      image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778683762/dairy_and_bread_bs0hoi.png",
+      name: "Dairy & Bread",
+    },
+    {
+      image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778683761/oats_g3du3z.png",
+      name: "Oats",
+    },
+    {
+      image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778683765/snacks_smagwk.png",
+      name: "Snacks",
+    },
+    {
+      image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778683764/drinks_vmcazd.png",
+      name: "Cold Drinks",
+    },
+    {
+      image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778683761/cookies_sh1drk.png",
+      name: "Cookies",
+    },
+    {
+      image: "https://res.cloudinary.com/dcfjexbss/image/upload/v1778683763/chocolates_dsrfxq.png",
+      name: "Chocolates",
+    },
+  ]
+
+
+   //--------------------------------------------------------------------------
   const cities = [
     "Mumbai",
     "Pune",
@@ -135,7 +155,7 @@ function Home() {
       </div>
 
       {/* Groceries */}
-      <div className=" p-3 lg:p-10">
+      <div className=" mt-3 p-3 lg:p-10">
         <div>
           <h1 className=" font-bold text-xl">Shop groceries on Instamart</h1>
 
@@ -143,6 +163,12 @@ function Home() {
             <button></button>
             <button></button>
           </div>
+
+          <div className=" w-full p-2 grid grid-rows-1 grid-flow-col gap-3 justify-items-center overflow-x-auto scrollbar-hide">
+          {groceries.map((item, id) => (
+            <FoodOptCard key={id} item={item} />
+          ))}
+        </div>
         </div>
       </div>
 

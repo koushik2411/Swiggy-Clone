@@ -5,10 +5,10 @@ function FoodOptCard({ item }) {
   return (
     <>
       <Link to={item.link}>
-        <div className=" border w-[25vw] lg:w-[16vw] h-30 md:h-48 flex flex-col items-center justify-evenly">
-          <img src={item.image} />
+        <div className=" w-[25vw] lg:w-[16vw] flex flex-col items-center justify-evenly gap-2">
+          <img src={item.image} className=" rounded-t-xl"/>
 
-          <h1 className=" text-xs md:text-sm lg:text-lg">{item.name}</h1>
+          <h1 className=" mb-3 text-sm md:text-md lg:text-lg">{item.name}</h1>
         </div>
       </Link>
     </>
